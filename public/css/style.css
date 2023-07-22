@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーのスタイル設定 */
+header {
+    background-color: rgba(65, 103, 202, 0.95); /* #4167CAの色で透明度50% */
+    padding: 10px 0; /* ヘッダー内の要素に余白を追加 */
+}
+
+/* h1タグのスタイル設定 */
+header h1 {
+    color: #FFF; /* テキストの色を白に設定 */
+    margin: 0; /* マージンをリセット */
+    padding-left: 20px; /* パディングをリセット */
+}
+
+.hero {
+    /* 画像を背景として設定 */
+    background-image: url('/img/chatapp_hero.jpg');
+
+    /* 画像を常に全画面表示にする */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* 要素を中央揃えにする */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h2 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text p {
+    color: #fff;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4167CA;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 登録フォームのスタイル */
+.register-form {
+    background-color: rgba(0, 0, 0, 0.7); /* 黒色で透明度70% */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.register-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.register-form input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.hero-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4167CA;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#chat-area {
+  margin: 20px;
+}
+
+#chat-messages {
+  list-style: none;
+  padding: 0;
+}
+
+#chat-messages li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #E0E0E0;
+}
+
+#chat-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#chat-form input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#chat-form button {
+  padding: 10px 20px;
+  background-color: #4167CA;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4167CA;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+

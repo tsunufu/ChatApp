@@ -1,0 +1,14 @@
+  <div id="chat-area">
+    <ul id="chat-messages">
+      <% @messages.each do |message| %>
+        <li><%= message.user.try(:name) %>: <%= message.try(:content) %></li>
+      <% end %>
+    </ul>
+
+    <form id="chat-form" action="/chatroom/send" method="post">
+      <input type="hidden" name="user_id" value="<%= @user.id %>">
+      <input type="hidden" name="chat_id" value="<%= @chat.id %>">
+      <input type="text" name="content" placeholder="Type a message..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
